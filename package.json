@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"No tests yet\" && exit 0",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .js,.jsx"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -19,3 +19,4 @@
     "globals": "^17.13.0"
   }
 }
+
