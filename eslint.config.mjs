@@ -1,5 +1,15 @@
-import { defineConfig } from "eslint/config";
+import globals from "globals";
+import pluginJs from "@eslint/js";
 
-export default defineConfig([
-  { ignores: ["**/*.js", "**/*.cjs", "**/*.mjs"] },
-]);
+export default [
+  {
+    files: ["**/*.js", "**/*.jsx"],
+    languageOptions: { globals: globals.browser },
+    rules: {
+      "no-unused-vars": "warn",
+      "no-console": "off"
+    }
+  },
+  pluginJs.configs.recommended,
+];
+
